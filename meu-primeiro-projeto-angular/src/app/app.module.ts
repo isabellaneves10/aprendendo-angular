@@ -1,3 +1,4 @@
+import { CursosModule } from './cursos/cursos.module';
 // Todo novo component deve ser importado
 import { NgModule } from '@angular/core';
 //ser executada em um Browser
@@ -17,9 +18,11 @@ import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    CursosModule
   ],
   providers: [],
+  //AppComponent(html) é a tela principal
   bootstrap: [AppComponent]
 })
 export class AppModule { }
